@@ -1,7 +1,5 @@
+import { AudioVisualizer } from '@/components/audio-visualizer';
+
 export default function Home() {
-  return (
-    <main style={{ padding: 32, fontFamily: 'system-ui' }}>
-      <h1>audio-visualizer</h1>
-    </main>
-  );
+  return <AudioVisualizer />;
 }

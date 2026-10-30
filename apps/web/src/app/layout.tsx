@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,8 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "audio-visualizer",
-  description: "audio-visualizer",
+  title: "Audio Visualizer",
+  description: "An audio-reactive visualizer built with the Web Audio API and canvas.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#05030a",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
